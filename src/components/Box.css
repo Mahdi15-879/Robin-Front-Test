@@ -90,12 +90,20 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .Box {
+    width: 75%;
+  }
+
   .Box__body h3 {
     font-size: 0.8rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
+  .Box {
+    width: 80%;
+  }
+
   .Box__body h3 {
     font-size: 0.7rem;
   }
@@ -106,6 +114,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .Box {
+    width: 90%;
+  }
+
   .Box__body h3 {
     font-size: 0.5rem;
   }

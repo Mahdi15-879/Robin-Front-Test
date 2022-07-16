@@ -1,15 +1,21 @@
-import React from 'react';
+import React from "react";
 
 // Components
-import Input from './components/Input';
+import Box from "./components/Box";
 
 // Styles
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Input />
+      <div className="App__body">
+        <Box />
+      </div>
+
+      <div className="App__footer">
+        <h4>&copy; 2022 Robin. All rights reserved.</h4>
+      </div>
     </div>
   );
 }

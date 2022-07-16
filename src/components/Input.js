@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 
-const Input = () => {
+// Styles
+import "./Input.css";
+
+const Input = ({ limit, pHolder, label }) => {
   const [value, setValue] = useState("");
   const [error, setError] = useState("");
 
   const inputHandler = (e) => {
-    if (e.target.value.length > 10) {
+    if (e.target.value.length > limit) {
       setError("Error");
     } else {
       setValue(e.target.value.replace(/\D/g, ""));
@@ -14,7 +17,13 @@ const Input = () => {
 
   return (
     <div className="Input">
-      Enter : <input type="text" value={value} onChange={inputHandler} />
+      <label>{label}</label>
+      <input
+        type="text"
+        value={value}
+        onChange={inputHandler}
+        placeholder={pHolder}
+      />
     </div>
   );
 };

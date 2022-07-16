@@ -1,0 +1,63 @@
+@keyframes scaleLogo {
+  from {
+    transform: scale(0.8);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(0.8);
+  }
+}
+
+.Box {
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Box__header {
+  width: 100%;
+  height: 10%;
+  background-color: rgb(43, 204, 248);
+  display: flex;
+  justify-content: end;
+}
+
+.Box__header figure {
+  margin: 0;
+  width: 65px;
+  height: 65px;
+  margin: 0.5rem;
+}
+
+.Box__header figure img {
+  width: 100%;
+  height: 100%;
+  animation-name: scaleLogo;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.Box__body {
+  width: 100%;
+  height: 90%;
+  background-color: rgb(224, 227, 227);
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Box__body h3 {
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.Box__body h3 span {
+  color: rgb(3, 158, 200);
+}

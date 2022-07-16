@@ -71,7 +71,6 @@
   border-radius: 5px;
   background-color: rgb(43, 204, 248);
   cursor: pointer;
-  /* margin-top: 1.5rem; */
   color: #fff;
 }
 
@@ -88,4 +87,39 @@
   color: #f44336;
   font-size: 1rem;
   margin: 1rem 0 !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Box__body h3 {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Box__body h3 {
+    font-size: 0.7rem;
+  }
+
+  .Box__checkbox label {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Box__body h3 {
+    font-size: 0.5rem;
+  }
+
+  .Box__checkbox label {
+    font-size: 0.6rem;
+  }
+
+  .Box__body button {
+    width: 13rem;
+    height: 2rem;
+  }
+
+  .error {
+    font-size: 0.8rem;
+  }
 }

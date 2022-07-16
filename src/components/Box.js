@@ -85,7 +85,7 @@ const Box = () => {
             <input type="checkbox" onChange={checkHandler} />
           </div>
 
-          <h3 className="error">{error && errorMessage}</h3>
+          <h2 className="error">{error && errorMessage}</h2>
 
           <button type="submit">ورود به حامی چت</button>
         </div>
